@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Huddle landing page with single introductory section</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body{
+    min-height: 100vh;
+    background-color: hsl(257, 40%, 49%);
+    background-image: url(images/bg-desktop.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  header{
+    align-self: flex-start;
+  }
+
+  header > img{
+    height: 30px;
+    margin: 2rem;
+  }
+
+  main{
+    margin-top: 2.5rem;
+    margin-left: 3.2rem;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  main > section > img{
+    height: 400px;
+  }
+
+  h1{
+    font-family: 'Open Sans',sans-serif;
+    color: white;
+    font-size: 36px;
+    width: 80%;
+  }
+
+  p{
+    font-family: 'Poppins',sans-serif;
+    color: lightgray;
+    width: 95%;
+  }
+
+  button{
+    padding: 1rem 3.5rem 1rem 3.5rem;
+    border-radius: 30px;
+    border: none;
+    font-family: 'Open Sans',sans-serif;
+    color: hsl(257, 40%, 49%);
+    font-weight: bolder;
+    box-shadow: 5px 5px 15px rgba(62, 0, 109, 0.68);
+    cursor: pointer;
+  }
+  .info{
+    margin-bottom: 5rem;
+  }
+  .info > p{
+    line-height: 30px;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
+
+  footer{
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    padding-right: 5rem;
+    align-items: center;
+    object-position: center;
+  }
+
+  footer > div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 30px;
+    border: 1px solid white;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  footer > div > img{
+    height: 15px;
+    filter: brightness(0) invert(1);
+  }
+
+  footer > div:hover {
+    border: 1px solid #F956C5;
+    filter: invert(52%) sepia(30%) saturate(3202%) hue-rotate(289deg) brightness(99%) contrast(98%);
+  
+  }
+
+  button:hover{
+    color: white;
+    background-color: #F956C5;
+  }
+
+  @media (max-width:600px){
+    body{
+      width: 100%;
+    }
+    main{
+      flex-direction: column;
+      margin-left: 0;
+      width: 100%;
+    }
+
+    main > section > img{
+    height:250px;
+  }
+
+    .info{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 0;
+    }
+    footer{
+      width: 100%;
+      justify-content: center;
+      padding: 2rem;
+    }
+  }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="images/logo.svg" alt="">
+  </header>
+  <main>
+    <section>
+      <img src="images/illustration-mockups.svg" alt="">
+    </section>
+    <section class="info">
+      <h1>Build The Community Your Fans Will Love</h1>
+
+      <p>Huddle re-imagines the way we build communities. You have a voice, but so does your audience. 
+        Create connections with your users as you engage in genuine discussion.</p>
+      <button>Register</button>
+    </section>
+  </main>
+  <footer>
+    <div class="facebook"><img src="images/facebook-f.svg"></div>
+    <div class="twitter"><img src="images/twitter.svg"></div>
+    <div class="instagram"><img src="images/instagram.svg"></div>
+  </footer>
+
+</body>
+</html>
